@@ -12,6 +12,7 @@ var express = require('express'),
 // configs ===========================================
 mongoose.connect('mongodb://localhost/Test');
 // mongoose.connect('mongodb://sadeqzadeh@gmail.com:dUzV&8NRbV$7aM%@novus.modulusmongo.net:27017/uqeqUd3u');
+// free mongodb databse on modulus.io
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
