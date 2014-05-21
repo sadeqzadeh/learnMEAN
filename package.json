@@ -1,0 +1,15 @@
+{
+  "name": "node-todo",
+  "version": "0.0.0",
+  "description": "simple todo list app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Javad",  
+  "dependencies" : {
+    "express" : "4.2.x",
+    "mongoose" : "3.8.x"
+  }
+}
