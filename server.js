@@ -11,7 +11,7 @@ var express = require('express'),
 
 // configs ===========================================
 mongoose.connect('mongodb://localhost/Test');
-// mongoose.connect('mongodb://sadeqzadeh@gmail.com:dUzV&8NRbV$7aM%@novus.modulusmongo.net:27017/uqeqUd3u');
+// mongoose.connect('mongodb://dummydb.modulusmongo.net');
 // free mongodb databse on modulus.io
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
@@ -19,12 +19,12 @@ db.once('open', function callback() {
 	console.log('Test db is now open.')
 })
 
-app.use(express.static(__dirname + '/public')); 		// set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
 app.use(morgan({
     format: 'dev',
     immediate: true
 }));
-app.use(bodyParser()); 							// pull information from html in POST
+app.use(bodyParser()); // pull information from html in POST
 
 
 // define model ======================================
