@@ -9,7 +9,7 @@
   },
   "author": "Javad",  
   "dependencies" : {
-    "express" : "4.2.x",
+    "express" : "4.16.4",
     "mongoose" : "3.8.x"
   }
 }
