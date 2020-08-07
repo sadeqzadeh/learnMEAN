@@ -10,6 +10,6 @@
   "author": "Javad",  
   "dependencies" : {
     "express" : "4.16.4",
-    "mongoose" : "3.8.x"
+    "mongoose" : "5.9.x"
   }
 }
